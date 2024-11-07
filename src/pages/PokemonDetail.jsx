@@ -16,10 +16,10 @@ export default function PokemonDetail() {
     }
   }, [id, dispatch, pokemon]);
 
-  // Loading state
+  // Loading state ini
   if (loading) return <div className="text-center text-xl">Loading...</div>;
 
-  // Error state
+  // Error state ini
   if (error) return <div className="text-red-500 text-center text-xl">Error: {error}</div>;
 
   if (!pokemon) return <div>No Pokémon found!</div>;
